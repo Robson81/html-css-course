@@ -1,0 +1,7 @@
+.conteudo{
+	border: 1px solid red;
+	padding: 10px ; /*ou padding-top ou right ou left ou bottom*/
+	padding-left:0px ;
+
+	margin: 20px;
+}

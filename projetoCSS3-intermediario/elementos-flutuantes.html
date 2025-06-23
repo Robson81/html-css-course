@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Modelo de Caixa</title>
+
+		<style type:="text.css">
+
+			#principal{
+				border: 1px red solid;
+				background: url('capa.png') no-repeat;
+				
+			}
+			
+			.conteudo{
+				background: blue;
+				border: 1px solid red; 
+				width: 200px; 
+				height: 200px;
+				color: white;
+				margin: 10px;
+				float: left;
+			}
+			
+			.clear{
+				clear: both; /*left right both none*/;
+			}
+			
+
+		</style>
+
+
+	</head>
+	<body>
+
+		<div id="principal">
+			<div class="conteudo">
+				CONTEÚDO 1
+			</div>
+			<div class="conteudo">
+				CONTEÚDO 2
+			</div>
+			<div class="conteudo">
+				CONTEÚDO 3
+			</div>
+			<div class="clear"> </div>
+		</div>
+		
+
+	</body>
+</html>
