@@ -1,0 +1,133 @@
+/* *{
+	border: 1px red solid; /* seletor universal 
+}
+
+h1 {
+	color: green; /*seletor de texto
+}
+
+/* seletor de classe 
+.verde {
+	color: green;
+}
+
+p.verde {
+	color: green;
+
+#cabecalho {
+		border:	1px solid blueviolet; /*Seletor de ID
+} 
+}
+ul > li > a { /*seletor de 'filhos'
+
+	color: green;
+	text-decoration: none;
+}
+
+div a { /*todo a é Descendente de p 
+
+	color: orange;
+	border: 1px solid	darkred;
+}
+
+h1 ~ p { /*seletor de irmão geral	
+	color: gray;
+}
+
+h1 + p { /*seletor de irmão ao lado ou adjacente
+color: red;
+}
+
+* {
+		border: 1px solid blue;
+}
+body{
+	color: red !important ; /*em seletores de mesmo tipo o "!important" dá prioridade ao parâmetro marcado, sobre os demais
+	font-size: 1em;
+	background: lightgrey;
+}
+body{
+	color: white;
+	font-size: 1em;
+	background: lightgrey;
+}
+
+p{
+	color: orange;
+}
+
+h2 {
+	color: blue;
+}
+
+h2#amarelo { /*ID tem mais especificidade sobre uma classe
+	color: yellow;
+}
+
+h2.verde {
+	color: green;
+}
+
+
+.caixa{
+	font: 16px Helvetica;
+	background: yellow;
+	float: left;
+	text-decoration: none;
+	width: 200px;
+	border: 1px solid red;
+	padding: 10px;
+	margin: 5px;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	border: 1px solid red;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+
+}
+
+li {
+	padding: 5px 20px;
+	background: url(../imagens/seta.png) no-repeat left center ;
+}*/
+
+ul {
+
+	margin: -6px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+ul a {
+	width: 200px;
+	height: 40px;
+	text-decoration: none;
+	display: block; /* display trasforma elementos tipo block em inline
+	e virce e versa */
+	background: #f7b600; url(../imagens/men.png) no-repeat left;
+	color: #000;
+	text-indent: 40px;
+	line-height: 40px;
+}
+
+a:hover, .selecionado a {
+	background-position: right;
+	background-color: #f99200;
+	color: white;
+}
+
+#home #navegacao-lateral .home a,
+#sobre #navegacao-lateral .sobre a,
+#servicos #navegacao-lateral .servicos a,
+#noticias #navegacao-lateral .noticias a,
+#contatos #navegacao-lateral .contatos a{
+	background-position: right;
+	background-color: darkblue;
+	color: white;
+}
