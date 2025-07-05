@@ -1,0 +1,113 @@
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif ;
+	background: white;
+}
+
+table {
+	width: 600px;
+	border-collapse: separate; /* colapsse unifica as bordas ou separate separa as bordas*/;
+}
+
+th, td {
+	padding: 7px;
+}
+
+th {
+	text-transform: uppercase;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #111;
+	text-align: left;
+	font-size: 75%;
+	letter-spacing: 0.5em;
+}
+tr.alterna{
+	background-color: #efefef;
+}
+
+tr:hover {
+	background-color: #e3e3c5; ;
+}
+.numero {
+	text-align: right;
+}
+
+/*
+
+#container {
+	border: 1px solid red;
+	width: 960px;
+	margin: 0 auto;
+	background: #fff url(../imagens/coluna.png) repeat-y left top;
+	min-width:820px;
+}
+
+
+#marca {
+	width:100%;
+	height: 200px;
+	line-height: 200px;
+	background: #9E9E9E url(../imagens/cabecalho2.jpg) no-repeat center;
+	text-align: center;
+	background-size: cover; /* faz o tamanho do background se ajustar à largura do container
+	
+}
+
+#imagem {
+	width: 90%; está linha deixa a imagem "natureza" com 90% de cobertura da tela
+	overflow: hidden; garante que a imagem seja contida dentro do container, mesmo cortanfo uma parte dela
+}
+
+img.img-noticia {
+	width: 96%;
+	padding: 2%;
+	max-width: 600px;
+}
+#conteudo {
+	width: 75%;
+	float: right;
+	text-align: justify;
+	margin-right: 10px;
+}
+
+#conteudo-principal {
+
+	width: 64%;
+	float: left;
+	
+}
+
+#conteudo-secundario {
+	width: 34%;
+	float: right;
+	background: #d1d1d1;
+	padding: 0 5px;
+	
+}
+
+#navegacao {
+	width: 23%;
+	float: left;
+	padding-top: 20;
+	padding-right: 20;
+	padding-bottom: 20px;
+	background: #d1d1d1;
+	text-align: justify;
+}
+
+#rodape {
+	clear: both;
+	background: #c4c4c4;
+	padding: 5px;
+	text-align: center;
+}
+
+#navegacao ul {
+	list-style: none;
+	padding: 0;
+	text-align: center;
+}
+
+#navegacao li a {
+	text-decoration: none;
+}
+*/

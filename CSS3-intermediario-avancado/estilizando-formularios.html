@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Estilizando Tabelas</title>
+
+		<link rel="stylesheet" type="text/css" href="css/estilo-formularios.css">
+
+	</head>
+	<body>
+
+		<h2>Estilizando Formularios</h2>
+
+		<form>
+			<fieldset>
+			<legend>Detalhes e Contatos</legend>
+			<div>
+				<label>Nome:
+				<input type="text" name="nome"> <!--o input pode ser feito desta forma (dentro do label)-->
+				</label>
+			</div>
+			<div>
+				<label>Email:
+				<input type="text" name="e-mail"> <!--o input pode ser feito desta forma (dentro do label)-->
+				</label>
+			</div>
+			<div>
+				<label>URL:
+				<input type="text" name="url"> <!--o input pode ser feito desta forma (dentro do label)-->
+				</label>
+			</div>
+			</fieldset>
+			<hr>
+			<fieldset>
+			<legend>Comentarios</legend>
+			<div align="justify">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div><br><br>
+				<label>Mensagem:
+				<textarea name="mensagem"></textarea>
+				</label>
+			<div>
+
+			</div>
+			</fieldset>
+
+			<fieldset>Lembrar de mim
+			<div>
+				<label>
+					<input class="radio" type="radio" name="lembrar">Sim
+				</label>
+			</div>
+			<div>
+				<label>
+					<input class="radio" type="radio" name="lembrar">Não
+				</label>
+			</div>
+			</fieldset>
+			<fieldset>
+			<legend>Detalhes e Contatos</legend>
+			<div>
+				<label for="nome">Nome:</label> <!--o input pode ser feito desta forma (fora do label, mas com uso do "id" e do "for" com a mesma descrição)-->
+				<input type="text" name="nome" id="nome">
+			</div>
+			</fieldset>
+			<hr>
+		</form>
+		
+		
+
+		
+
+	</body>
+</html>
