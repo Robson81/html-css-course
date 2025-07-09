@@ -15,6 +15,11 @@ ul {
 	list-style: none;
 }
 
+img.imagem-principal {
+	width: 98%
+	border: 3px solid #dfdfdf;
+}
+
 #container {
 	width: 85%;
 	margin: 0 auto;
@@ -29,6 +34,20 @@ ul {
 	padding-top: 15px;
 	 /*background-size: cover; faz o tamanho do background se ajustar à largura do container */
 	
+}
+
+#lista-noticias {
+	padding: 2px;
+	border-bottom: 1px solid #ccc;
+	height: 65px;
+}
+#lista-noticias li a img {
+	float: left;]
+	margin: 5px;
+}
+#lista-noticias li a {
+	text-decoration: none;
+	font-size: 0.8em;
 }
 
 .logo {
@@ -144,6 +163,22 @@ h2 {
 	padding: 3px;
 }
 
+h3	{
+	display: inline;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	padding: 3px;
+}
+
+.destaque h3 {
+	background: #b10333;
+	color: 	#fff;
+}
+
+.entrevista h3 {
+	background: #b10333;
+	color: 	#de003e;
+}
 /*formatação da coluna lateral*/
 
 #lateral ul a {
