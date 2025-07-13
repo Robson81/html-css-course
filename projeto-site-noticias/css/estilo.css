@@ -50,7 +50,6 @@ img.imagem-principal {
     position: relative;
 }
 
-
 #lista-noticias li {
 	padding: 2px;
 	height: 62px;
@@ -150,7 +149,7 @@ ul#navegacao a:hover, ul#navegacao a.selecionado  {
 
 }
 
-#uma-colunas #primario {
+#uma-coluna #primario {
 	width: 750px;
 	margin: 0 0 20px 0;
 	line-height: 2em;

@@ -3,37 +3,123 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Notícias Cidade</title>
+		<title>Brasil</title>
 
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	</head>
-	<body>
+	<body id="duas-colunas" class="brasil">
+		<!--início container-->
+	<div id="container">
 
-		<div id="container">
-			conteúdo do site
-
-			<div id="topo">
-				<h1 class="logo">Notícias Cidade</h1>
+		<div id="topo"> <!--início topo-->
+			<h1 class="logo">Notícias Cidade</h1>
 			<ul id="navegacao">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="brasil.html" class="selecionado" >Brasil</a></li>
+			<li><a href="index.html" class="selecionado">Home</a></li>
+			<li><a href="brasil.html">Brasil</a></li>
 			<li><a href="internacional.html">Internacional</a></li>
 			<li><a href="economia.html">Economia</a></li>
 			<li><a href="saude.html">Saúde</a></li>
 			<li><a href="ciencias.html">Ciência</a></li>
 			<li class="ultima"><a href="fotos.html">Fotos</a></li>
+			</ul>
+ 		</div> <!--fim /topo-->
 
-		</ul>	
-			</div>
+ 			<!--início conteúdo-->
+ 		<div id="conteudo">
+ 			<div id="primario">
+ 				<div class="caixa entrevista">
+ 				<h2>Destaque</h2>
+ 				<div class="caixa-conteudo">
+ 					<h3>Nova legislação</h3>
+ 					<img src="imagens/taxi.jpg" width="100%">
+ 					<p>
+ 						Lorem ipsum dolor sit amet, 
+ 						consectetur dipisicing elit.
+ 					</p>
+ 					<a href="nova-ligislacao.html">Leia mais!</a>
+ 				</div>
+ 				</div>
+ 			<div class="caixa">
+ 				<h2>Notícias Recentes</h2>
+ 				<div class="caixa-conteudo">
+ 					<ul  id="lista-noticias">
+ 					<li>
+ 						<a href="">
+ 							<img src="imagens/tecnologia.jpg" width="80">
+ 							<h3>Novas Tecnologias</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur...</p>
+ 						</a>
+ 					</li>
+ 					<li>
+ 						<a href="">
+ 							<img src="imagens/cidade.jpg" width="80">
+ 							<h3>Parlamento Aprova...</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur...</p>
+ 						</a>
+ 					</li>
+ 					<li>
+ 						<a href="">
+ 							<img src="imagens/taxi.jpg" width="80">
+ 							<h3>Taxistas na cidade</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur...</p>
+ 						</a>
+ 					</li>
+ 					<li>
+ 						<a href="">
+ 							<img src="imagens/doutor.jpg" width="80">
+ 							<h3>Comissão aprova</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur...</p>
+ 						</a>
+ 					</li>
+ 					</ul>
+ 				</div>
+ 				</div>
+ 			</div>
+ 		
+ 			<div id="lateral">
+ 				<div class="caixa">
+ 				<h2>Entrevistas</h2>
+ 				<div class="caixa-conteudo">
+ 					<ul id="caixa">
+ 					<li><a href=""><h5>J. S. Bach</h5></a></li>
+ 					<li><a href=""><h5>Heitor Villa Lobos</h5></a></li>
+ 					<li><a href=""><h5>Izaac Albeniz</h5></a></li>
+ 					<li><a href=""><h5>Antônio Vivaldi</h5></a></li>
+ 					<li><a href=""><h5>Ferdinando Sor</h5></a></li>
+ 					<li><a href=""><h5>Francisco Tarrega</h5></a></li>
+ 					<li><a href=""><h5>Telleman</h5></a></li>
+  				</ul>
+ 				</div>
+ 				</div>
+ 				<div class="caixa">
+ 				<h2>News</h2>
+ 				<div class="caixa-conteudo">
+ 				<form>
+     			<div>
+     				<label>E-mail
+     				<input type="text" name="email" id="email" placeholder="E-mail">
+   					</label>
+     			</div>
+     			<div>
+     				<input class="submit" type="submit" value="Cadastrar">
+     			</div>
+    			</form>
+ 				</div>
+ 				</div>
+ 			</div>
+ 		</div> 	<!--fim /conteúdo-->
 
-
-
-
-		</div>
-
-		
-			
-			
+	</div> <!--fim /container--> 
+	<!--início container rodape-->
+	<div id="container-rodape" style="clear:both;">
+ 			<div id="rodape">
+ 				<h5>&copy; Copyright 2000-2025 Notícias Cidade <br>
+ 				Telefone: 91 99999-999 <br>
+ 				E-mail: e-mail@email.com.br 
+ 			</h5>
+ 			</div> 
+ 	</div> <!--fim  /container rodape-->
+	
 
 	</body>
 </html>
