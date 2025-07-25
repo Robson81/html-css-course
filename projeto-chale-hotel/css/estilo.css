@@ -10,7 +10,7 @@ body {
 }
 
 #container {
-	background: #ede9cc;
+	background: #ede9cc url(../imagens.bg-container.png) top center repeat-y;
 	border: 1px solid red;
 	margin: 0 auto;
 	min-width: 750px;
@@ -118,8 +118,23 @@ ul#navegacao a:hover{
 	margin-left: 10px;
 }
 
-#post-lateral {
+#area-principal {
 	float: left;
+	width: 50%;
+}
+
+#area-lateral {
+	float: right;
+	width: 50%;
+}
+
+.conteudo {
+	margin: 0 auto ;
+	width: 90%;
+}
+
+.rodape {
+	car: both;
 }
 
 
