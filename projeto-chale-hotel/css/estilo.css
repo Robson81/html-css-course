@@ -10,7 +10,7 @@ body {
 }
 
 #container {
-	background: #ede9cc url(../imagens.bg-container.png) top center repeat-y;
+	background: #ede9cc url(../imagens/bg-container.png) top center repeat-y;
 	border: 1px solid red;
 	margin: 0 auto;
 	min-width: 750px;
@@ -121,11 +121,43 @@ ul#navegacao a:hover{
 #area-principal {
 	float: left;
 	width: 50%;
+	background: url(../imagens/bg-area-principal.png) top left repeat-x;
+	padding: 15px 0px;
+	/*border: 1px solid red;*/
 }
 
 #area-lateral {
 	float: right;
 	width: 50%;
+	background: url(../imagens/bg-area-lateral.png) top right repeat-x;
+	padding: 15px 0px;
+	/*border: 1px solid red;*/
+}
+
+#acomodacoes li a img {
+	margin-right: 8px;
+	width: 130px;
+	float: left;
+}
+
+#acomodacoes li:hover{
+	background: #f6f3d6;
+	cursor: ;
+}
+
+#acomodacoes p {
+	font-size: 1em;
+	color: #000;
+}
+
+#acomodacoes li {
+	padding: 8px;
+	border-bottom: 1px solid #f3efcb;
+	height: 6em;
+}
+
+#acomodacoes .ultimo {
+	border-bottom: none;
 }
 
 .conteudo {
@@ -134,10 +166,38 @@ ul#navegacao a:hover{
 }
 
 .rodape {
-	car: both;
+	clear: both;
+	padding: 16px;
+	background: #fff url(../imagens/br-rodape.png) repeat-x top;
+	color: #7d7640;
+	text-align: center;
 }
 
 
 ul {
 	list-style: none;
+}
+
+P {
+	text-align: justify;
+	font-size: 1em;
+	margin-bottom: 10px;
+}
+
+h2 	{
+	color: #7d7640;
+	font-size: 1.1em;
+	padding: 5px 0;
+}
+
+h3 	{
+	color: #7d7640;
+	font-size: 1.1em;
+	padding: 5px 0;
+	background: url(../imagens/ornamento.png) no-repeat top right;
+}
+
+a {
+	text-decoration: none;
+	font-size: 0.9em;
 }
