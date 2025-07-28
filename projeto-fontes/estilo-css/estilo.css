@@ -1,0 +1,44 @@
+@font-face {
+	font-family: "Road-Personalizado";
+	src: url("../fontes/RoadRage.woff");
+}
+
+@font-face {
+	font-family: "Ancient";
+	src: url("../fontes/Ancient-Medium.woff");
+}
+
+@font-face {
+	font-family: "BringHeart";
+	src: url("../fontes/BringHeart.woff");
+}
+
+@font-face {
+	font-family: "MadelinaScript";
+	src: url("../fontes/MadelinaScript.woff");
+}
+
+.font1 h1 {
+	font-size: 6em;
+	font-family: "Road-Personalizado";
+}
+
+.font2 h1 {
+	font-size: 6em;
+	font-family: "Ancient-Medium";
+}
+
+.font3 h1 {
+	font-size: 6em;
+	font-family: "BringHeart";
+}
+
+.font4 h1 {
+	font-size: 6em;
+	font-family: "MadelinaScript";
+}
+
+h1 {
+	font-size: 6em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
