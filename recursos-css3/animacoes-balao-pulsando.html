@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Botão com Efeito de Pulsação</title>
+    
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    
+    <!-- Estilo customizado -->
+    <style>
+        .botao-pulsante {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #FF5722;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            margin: 50px;
+            box-shadow: 0 5px 15px rgba(255, 87, 34, 0.4);
+            animation: pulsar 2s infinite;
+        }
+        
+        @keyframes pulsar {
+            0% { transform: scale(1); box-shadow: 0 5px 15px rgba(255, 87, 34, 0.4); }
+            50% { transform: scale(1.05); box-shadow: 0 10px 25px rgba(255, 87, 34, 0.6); }
+            100% { transform: scale(1); box-shadow: 0 5px 15px rgba(255, 87, 34, 0.4); }
+        }
+        
+        .botao-pulsante:hover {
+            animation: none;
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(255, 87, 34, 0.6);
+        }
+        
+        .botao-pulsante::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255,255,255,0.2);
+            transform: scale(0);
+            border-radius: 50px;
+            animation: onda 2s infinite;
+        }
+        
+        @keyframes onda {
+            0% { transform: scale(0); opacity: 1; }
+            100% { transform: scale(2); opacity: 0; }
+        }
+    </style>
+    
+    <!--[if IE]>
+        <script src="https://example.com/js/ie-fix.js"></script>
+        <link rel="stylesheet" href="https://example.com/css/ie-styles.css">
+    <![endif]-->
+</head>
+<body>
+    <button class="botao-pulsante">Clique Aqui</button>
+</body>
+</html>

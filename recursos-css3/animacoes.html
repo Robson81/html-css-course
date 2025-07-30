@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Animações CSS</title>
+    
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    
+    <!-- Estilo customizado -->
+    <style>
+        @keyframes exemplo {
+            0% {
+                background-color: #e74c3c;
+                transform: rotate(0deg);
+            }
+            50% {
+                background-color: #3498db;
+                transform: rotate(180deg);
+            }
+            100% {
+                background-color: #2ecc71;
+                transform: rotate(360deg);
+            }
+        }
+        
+        .animacao {
+            width: 150px;
+            height: 150px;
+            background: #e74c3c;
+            margin: 50px auto;
+            
+            /* Aplicando a animação */
+            animation-name: exemplo;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        
+        .animacao:hover {
+            animation-play-state: paused;
+        }
+    </style>
+    
+    <!--[if IE]>
+        <script src="https://example.com/js/ie-fix.js"></script>
+        <link rel="stylesheet" href="https://example.com/css/ie-styles.css">
+    <![endif]-->
+</head>
+<body>
+    <div class="animacao">Elemento Animado</div>
+</body>
+</html>

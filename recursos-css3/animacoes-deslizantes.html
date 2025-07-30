@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carrossel de Fotografias</title>
+    
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    
+    <!-- Estilo customizado -->
+    <style>
+        .carrossel {
+            width: 600px;
+            height: 400px;
+            margin: 50px auto;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            border-radius: 10px;
+        }
+        
+        .fotos {
+            display: flex;
+            width: 300%;
+            height: 100%;
+            animation: deslizar 15s infinite;
+        }
+        
+        .foto {
+            width: 33.33%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        @keyframes deslizar {
+            0% { transform: translateX(0); }
+            30% { transform: translateX(0); }
+            35% { transform: translateX(-33.33%); }
+            65% { transform: translateX(-33.33%); }
+            70% { transform: translateX(-66.66%); }
+            95% { transform: translateX(-66.66%); }
+            100% { transform: translateX(0); }
+        }
+        
+        .legenda {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        
+        .foto:hover + .legenda {
+            opacity: 1;
+        }
+    </style>
+    
+    <!--[if IE]>
+        <script src="https://example.com/js/ie-fix.js"></script>
+        <link rel="stylesheet" href="https://example.com/css/ie-styles.css">
+    <![endif]-->
+</head>
+<body>
+    <div class="carrossel">
+        <div class="fotos">
+            <img class="foto" src="https://source.unsplash.com/random/600x400?nature" alt="Natureza">
+            <div class="legenda">Paisagem Natural</div>
+            
+            <img class="foto" src="https://source.unsplash.com/random/600x400?city" alt="Cidade">
+            <div class="legenda">Vista Urbana</div>
+            
+            <img class="foto" src="https://source.unsplash.com/random/600x400?animal" alt="Animal">
+            <div class="legenda">Vida Animal</div>
+        </div>
+    </div>
+</body>
+</html>

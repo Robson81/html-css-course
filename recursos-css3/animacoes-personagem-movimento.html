@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personagem em Movimento</title>
+    
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    
+    <!-- Estilo customizado -->
+    <style>
+        .cenario {
+            width: 800px;
+            height: 300px;
+            margin: 50px auto;
+            background: linear-gradient(to bottom, #87CEEB, #E0F7FA);
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        .chao {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            background: linear-gradient(to right, #8BC34A, #4CAF50);
+        }
+        
+        .personagem {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            animation: andar 8s infinite;
+        }
+        
+        .nuvens {
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            top: 50px;
+            animation: mover-nuvens 20s linear infinite;
+        }
+        
+        .nuvem {
+            position: absolute;
+            width: 100px;
+            height: 60px;
+            background: white;
+            border-radius: 50px;
+            opacity: 0.8;
+        }
+        
+        .nuvem:nth-child(1) {
+            top: 10px;
+            left: 50px;
+        }
+        
+        .nuvem:nth-child(2) {
+            top: 30px;
+            left: 300px;
+            width: 150px;
+            height: 80px;
+        }
+        
+        .nuvem:nth-child(3) {
+            top: 5px;
+            left: 600px;
+        }
+        
+        @keyframes andar {
+            0% { transform: translateX(0) scaleX(1); }
+            25% { transform: translateX(200px) scaleX(1); }
+            50% { transform: translateX(400px) scaleX(1); }
+            51% { transform: translateX(400px) scaleX(-1); }
+            75% { transform: translateX(200px) scaleX(-1); }
+            100% { transform: translateX(0) scaleX(-1); }
+        }
+        
+        @keyframes mover-nuvens {
+            from { transform: translateX(0); }
+            to { transform: translateX(-100px); }
+        }
+    </style>
+    
+    <!--[if IE]>
+        <script src="https://example.com/js/ie-fix.js"></script>
+        <link rel="stylesheet" href="https://example.com/css/ie-styles.css">
+    <![endif]-->
+</head>
+<body>
+    <div class="cenario">
+        <div class="nuvens">
+            <div class="nuvem"></div>
+            <div class="nuvem"></div>
+            <div class="nuvem"></div>
+        </div>
+        <div class="chao"></div>
+        <img class="personagem" src="https://www.clipartmax.com/png/middle/171-1717870_starwars-clip-art-at-clker-com-vector-clip-art-online-8-bit-character-sprite.png" alt="Personagem 8-bit">
+    </div>
+</body>
+</html>

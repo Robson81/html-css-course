@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Border Radius e Box Sizing</title>
+    
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    
+    <!-- Estilo customizado -->
+    <style>
+        .caixa {
+            width: 300px;
+            height: 150px;
+            background: #3498db;
+            padding: 20px;
+            margin: 20px;
+            border: 5px solid #2980b9;
+            
+            /* Cantos arredondados */
+            border-radius: 15px;
+            
+            /* Box Sizing */
+            box-sizing: border-box; /* padding e border incluídos na largura/altura */
+        }
+        
+        .caixa-sem-box-sizing {
+            box-sizing: content-box; /* padrão - padding e border adicionais */
+        }
+    </style>
+    
+    <!--[if IE]>
+        <script src="https://example.com/js/ie-fix.js"></script>
+        <link rel="stylesheet" href="https://example.com/css/ie-styles.css">
+    <![endif]-->
+</head>
+<body>
+    <div class="caixa">Caixa com border-radius e box-sizing</div>
+    <div class="caixa caixa-sem-box-sizing">Caixa sem box-sizing</div>
+</body>
+</html>
