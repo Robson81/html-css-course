@@ -1,18 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Teste</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Menu Hamburger Corrigido</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h2 {
+            margin-top: 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #dee2e6;
+            color: #495057;
+        }
+        .navbar-custom {
+            background-color: #343a40;
+            position: relative;
+            border-radius: 5px;
+        }
+        .custom-toggler.navbar-toggler {
+            border-color: rgba(255,255,255,0.8);
+            margin-left: auto;
+        }
+        .custom-toggler .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+        
+        /* SOLUÇÃO: Posicionamento absoluto para o menu dropdown */
+        #nav-target {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            left: auto;
+            width: 200px;
+            background-color: #343a40;
+            z-index: 1000;
+            border-radius: 0 0 5px 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        /* Ajustes para os itens do menu */
+        #nav-target .navbar-nav {
+            padding: 10px;
+        }
+        #nav-target .nav-item {
+            margin: 5px 0;
+        }
+        #nav-target .nav-link {
+            color: rgba(255,255,255,0.8) !important;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+        #nav-target .nav-link:hover {
+            background-color: rgba(255,255,255,0.1);
+            color: #fff !important;
+        }
+        
+        /* Melhorias visuais para a demonstração */
+        .content-box {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .code-block {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #007bff;
+            border-radius: 4px;
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            margin: 15px 0;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <div class="content-box">
+            <h1 class="text-center mb-4">Menu Hamburger Corrigido</h1>
+            <p class="lead text-center">Agora o menu dropdown aparece abaixo do ícone hamburger, não do logo.</p>
+            
+            <h2>Barra de navegação com menu responsivo (Corrigido)</h2>
+            <p>O problema foi resolvido com CSS personalizado para posicionar o menu dropdown abaixo do ícone hamburger.</p>
+            
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark navbar-custom">
+                <!--Logo-->
+                <a href="#" class="navbar-brand">Chalé Hotel</a>
 
-	<h1>Cabeçalho 1</h1>
-    <h2>Cabeçalho 2</h2>
-    <h3>Cabeçalho 3</h3>
-    <h4>Cabeçalho 4</h4>
-    <h5 class="h1">Cabeçalho 5</h5>
-    <h6>Cabeçalho 6</h6>
+                <!--menu hamburger-->
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#nav-target">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
+                <!--navegacao-->
+                <div class="collapse navbar-collapse" id="nav-target">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <div class="code-block mt-4">
+                <h5>CSS utilizado para corrigir:</h5>
+                <pre>
+#nav-target {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: auto;
+    width: 200px;
+    background-color: #343a40;
+    z-index: 1000;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}</pre>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Como funciona a solução</h2>
+            <p>O problema original acontecia porque o menu dropdown do Bootstrap é projetado para aparecer abaixo de toda a barra de navegação. Para corrigir isso:</p>
+            <ol>
+                <li>Adicionamos <code>position: absolute</code> ao menu dropdown</li>
+                <li>Posicionamos o menu no canto superior direito com <code>top: 100%; right: 0;</code></li>
+                <li>Definimos uma largura fixa para o menu com <code>width: 200px;</code></li>
+                <li>Garantimos que o menu fique acima de outros elementos com <code>z-index: 1000;</code></li>
+                <li>Adicionamos um sombreamento para melhor visualização</li>
+            </ol>
+            <p>Redimensione a janela para ver o menu responsivo em ação. Em telas menores, o ícone hamburger aparecerá e, ao clicar, o menu será exibido abaixo dele.</p>
+        </div>
+
+        <div class="content-box">
+            <h2>Outros exemplos de navegação</h2>
+            
+            <h4>Navegação simples / abas</h4>
+            <ul class="nav justify-content-center mb-4">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
+            </ul>
+
+            <h4>Barra de navegação simples</h4>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-4"> 
+                <a href="#" class="navbar-brand">Chalé Hotel</a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>
