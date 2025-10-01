@@ -5,6 +5,14 @@
 }
 
 /*layout*/
+
+html, body, #home {
+
+	height: 100%;
+
+}
+
+
 body {
 	background: url(../imagens/capa.png), 
 				url(../imagens/ruido.png),
@@ -36,3 +44,15 @@ nav.navbar-transparente {
 	background:white ;
 	margin: 12px 15px;
 }
+
+.capa {
+	text-align: center;
+}
+
+h1 {
+font-weight: 900;
+letter-spacing: -0.05em;
+margin-bottom: 50px;
+color: white;
+}
+
