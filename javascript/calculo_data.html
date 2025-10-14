@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <script>
+  // Criando uma nova instância de Date
+  var data = new Date();
+  //document.write('Data atual completa: ' + data);
+  document.write('<br /><br />');
+
+  //adicionar e remover dias
+  document.write(data.toString())
+  document.write('<br /><br />');
+  document.write('<hr />');
+  document.write(data)
+  document.write('<br /><br />');
+  data.setDate(data.getDate() - 5)
+  document.write(data);
+  document.write('<br /><br />');
+  document.write('<hr />');
+  //adicionar e remover meses
+  data.setMonth(data.getMonth() - 5)
+  document.write(data);
+  document.write('<br /><br />');
+  document.write('<hr />');
+  //adicionar e remover ano
+  data.setFullYear(data.getFullYear() - 3)
+  document.write(data);
+  document.write('<br /><br />');
+  document.write('<hr />');
+  var data1 = new Date(2025, 0, 15)
+  var data2 = new Date(2025, 1, 23)
+  document.write(data1)
+  document .write('<hr />')
+  //converter datas para padrão de cálculo getTime()
+  document.write('<hr /> <br /><br />');
+  document.write(data1.getTime() + ' quantidade de segundos na data 15/janeiro/2025');
+  document .write('<hr />');
+  document.write(data2.getTime() +  ' quantidade de segundos na data 23/fevereiro/2025');
+  document.write('<hr /> <br /><br />');
+
+  //encontrar a quantidade de milissegundos entre data21 e data2
+
+  var data3 = new Date(data2.getTime() - data1.getTime());
+  document.write(data3);
+
+  
+</script>
+    
+  </head>
+
+  <body>
+  </body>
+</html>

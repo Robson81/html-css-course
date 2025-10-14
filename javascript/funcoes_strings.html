@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <script>
+  // Propriedade length
+  document.write('A função length conta o total de caracteres. Exemplo: "Jorge Sant Ana".length possui ' + 'Jorge Sant Ana'.length + ' caracteres, considerando cada letra e os espaços em branco como um caractere.');
+  document.write('<br /><br />');
+  
+  // Método charAt()
+  document.write('A função Jorge Sant Ana.charAt(6) encontra o elemento da posição especificada, no caso, a posição (6) = ' + 'Jorge Sant Ana'.charAt(6));
+  document.write('<br /><br />');
+
+  var nome = 'Jorge Sant Ana';
+  
+  // Método indexOf()
+  document.write('nome.indexOf("g") retorna a posição da primeira ocorrência do caractere "g" = ' + nome.indexOf('g'));
+  document.write('<br /><br />');
+
+  // Método replace()
+  document.write('nome.replace("Sant Ana", "Silva") substitui parte da string = ' + nome.replace('Sant Ana', 'Silva'));
+  document.write('<br /><br />');
+  
+  // Método substr() - OBS: Este método está obsoleto, substr() foi substituído por substring() e slice()
+  document.write('nome.substr(6,4) extrai uma substring começando na posição 6 e pegando 4 caracteres = ' + nome.substr(6,4));
+  document.write('<br /><br />');
+  
+  // Métodos para conversão de caso
+  document.write('nome.toLocaleLowerCase() converte toda a string para minúsculas = ' + nome.toLocaleLowerCase());
+  document.write('<br /><br />');
+  document.write('nome.toLocaleUpperCase() converte toda a string para maiúsculas = ' + nome.toLocaleUpperCase());
+  document.write('<br /><br />');
+
+  // Método trim()
+  document.write('nome.trim() remove espaços em branco do início e fim da string = -' + nome.trim() + '-');
+  document.write('<br /><br />');
+
+  // ===== OUTROS MÉTODOS RELEVANTES DE STRING =====
+  
+  // Método substring() - alternativa moderna ao substr()
+  document.write('nome.substring(6, 10) extrai caracteres entre as posições 6 e 10 = ' + nome.substring(6, 10));
+  document.write('<br /><br />');
+  
+  // Método slice()
+  document.write('nome.slice(6, 10) extrai uma seção da string = ' + nome.slice(6, 10));
+  document.write('<br /><br />');
+  
+  // Método split()
+  document.write('nome.split(" ") divide a string em um array usando espaço como separador = ' + JSON.stringify(nome.split(' ')));
+  document.write('<br /><br />');
+  
+  // Método concat()
+  document.write('nome.concat(" - Programador") concatena strings = ' + nome.concat(' - Programador'));
+  document.write('<br /><br />');
+  
+  // Método includes()
+  document.write('nome.includes("Sant") verifica se a string contém "Sant" = ' + nome.includes('Sant'));
+  document.write('<br /><br />');
+  
+  // Método startsWith()
+  document.write('nome.startsWith("Jorge") verifica se a string começa com "Jorge" = ' + nome.startsWith('Jorge'));
+  document.write('<br /><br />');
+  
+  // Método endsWith()
+  document.write('nome.endsWith("Ana") verifica se a string termina com "Ana" = ' + nome.endsWith('Ana'));
+  document.write('<br /><br />');
+  
+  // Método repeat()
+  document.write('"JS".repeat(3) repete a string 3 vezes = ' + 'JS'.repeat(3));
+  document.write('<br /><br />');
+  
+  // Template Strings (ES6)
+  var idade = 30;
+  document.write(`Template String: ${nome} tem ${idade} anos`);
+  document.write('<br /><br />');
+  
+  // Método padStart() e padEnd()
+  document.write('"5".padStart(3, "0") preenche no início = ' + '5'.padStart(3, '0'));
+  document.write('<br />');
+  document.write('"5".padEnd(3, "0") preenche no final = ' + '5'.padEnd(3, '0'));
+</script>
+    
+  </head>
+
+  <body>
+  </body>
+</html>

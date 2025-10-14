@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <script>
+  // Criando uma nova instância de Date
+  var data = new Date();
+  document.write('Data atual completa: ' + data);
+  document.write('<br /><br />');
+  
+  // Formatação básica de data
+  document.write('Data formatada (DD/MM/AAAA): ' + data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear());
+  document.write('<br /><br />');
+
+  // ===== MÉTODOS PRINCIPAIS DA CLASSE DATE =====
+  
+  // Métodos para obter componentes da data
+  document.write('data.getDate() - retorna o dia do mês (1-31): ' + data.getDate());
+  document.write('<br />');
+  document.write('data.getMonth() - retorna o mês (0-11): ' + data.getMonth() + ' → +1 para correção: ' + (data.getMonth() + 1));
+  document.write('<br />');
+  document.write('data.getFullYear() - retorna o ano com 4 dígitos: ' + data.getFullYear());
+  document.write('<br /><br />');
+  
+  // Métodos para obter componentes do tempo
+  document.write('data.getHours() - retorna as horas (0-23): ' + data.getHours());
+  document.write('<br />');
+  document.write('data.getMinutes() - retorna os minutos (0-59): ' + data.getMinutes());
+  document.write('<br />');
+  document.write('data.getSeconds() - retorna os segundos (0-59): ' + data.getSeconds());
+  document.write('<br />');
+  document.write('data.getMilliseconds() - retorna os milissegundos (0-999): ' + data.getMilliseconds());
+  document.write('<br /><br />');
+  
+  // Métodos para obter dia da semana
+  document.write('data.getDay() - retorna o dia da semana (0-6, onde 0=Domingo): ' + data.getDay());
+  document.write('<br /><br />');
+
+  // ===== MÉTODOS DE CONFIGURAÇÃO (SET) =====
+  
+  var dataModificavel = new Date();
+  document.write('Data original: ' + dataModificavel);
+  document.write('<br />');
+  
+  dataModificavel.setDate(15);
+  document.write('Após setDate(15): ' + dataModificavel);
+  document.write('<br />');
+  
+  dataModificavel.setMonth(5); // Junho (0-11)
+  document.write('Após setMonth(5): ' + dataModificavel);
+  document.write('<br />');
+  
+  dataModificavel.setFullYear(2025);
+  document.write('Após setFullYear(2025): ' + dataModificavel);
+  document.write('<br /><br />');
+
+  // ===== OUTROS MÉTODOS RELEVANTES =====
+  
+  // Timestamp
+  document.write('data.getTime() - retorna timestamp em milissegundos: ' + data.getTime());
+  document.write('<br /><br />');
+  
+  // Data a partir de string
+  var dataString = new Date('2024-12-25');
+  document.write('new Date("2024-12-25") - cria data a partir de string: ' + dataString);
+  document.write('<br /><br />');
+  
+  // Data a partir de componentes
+  var dataComponentes = new Date(2024, 11, 25, 10, 30, 0); // Mês: 0-11
+  document.write('new Date(2024, 11, 25, 10, 30, 0) - cria data a partir de componentes: ' + dataComponentes);
+  document.write('<br /><br />');
+  
+  // Data UTC
+  document.write('data.getUTCHours() - horas no fuso UTC: ' + data.getUTCHours());
+  document.write('<br />');
+  document.write('data.toISOString() - data em formato ISO: ' + data.toISOString());
+  document.write('<br /><br />');
+
+  // ===== FORMATAÇÕES DIFERENTES =====
+  
+  document.write('data.toLocaleDateString() - data no formato local: ' + data.toLocaleDateString());
+  document.write('<br />');
+  document.write('data.toLocaleTimeString() - hora no formato local: ' + data.toLocaleTimeString());
+  document.write('<br />');
+  document.write('data.toLocaleString() - data e hora no formato local: ' + data.toLocaleString());
+  document.write('<br /><br />');
+  
+  // Formatação personalizada
+  var diasSemana = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
+  var meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 
+               'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+  
+  document.write('Data formatada personalizada: ' + 
+                 diasSemana[data.getDay()] + ', ' + 
+                 data.getDate() + ' de ' + 
+                 meses[data.getMonth()] + ' de ' + 
+                 data.getFullYear());
+  document.write('<br /><br />');
+
+  // ===== CÁLCULOS COM DATAS =====
+  
+  // Diferença entre datas
+  var data1 = new Date('2024-01-01');
+  var data2 = new Date('2024-12-31');
+  var diferenca = data2.getTime() - data1.getTime();
+  var diasDiferenca = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+  
+  document.write('Diferença entre 01/01/2024 e 31/12/2024: ' + diasDiferenca + ' dias');
+  document.write('<br /><br />');
+  
+  // Adicionar dias a uma data
+  var dataFutura = new Date();
+  dataFutura.setDate(dataFutura.getDate() + 7);
+  document.write('Data daqui a 7 dias: ' + dataFutura.toLocaleDateString());
+  document.write('<br /><br />');
+  
+  // Comparação de datas
+  var hoje = new Date();
+  var amanha = new Date();
+  amanha.setDate(hoje.getDate() + 1);
+  
+  document.write('Hoje é antes de amanhã: ' + (hoje < amanha));
+  document.write('<br />');
+  document.write('Datas são iguais: ' + (hoje.getTime() === amanha.getTime()));
+</script>
+    
+  </head>
+
+  <body>
+  </body>
+</html>

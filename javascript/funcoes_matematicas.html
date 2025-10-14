@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <script>
+  // Math.ceil() - Arredonda para cima
+  var x = Math.ceil(10.380);
+  document.write('Math.ceil(10.380) força arredondamento para cima = ' + x);
+  document.write('<br /><br />');
+  
+  // Math.floor() - Arredonda para baixo
+  var y = Math.floor(10.380);
+  document.write('Math.floor(10.380) força arredondamento para baixo = ' + y);
+  document.write('<br /><br />');
+  
+  // Math.round() - Arredonda para o inteiro mais próximo
+  var z = Math.round(10.380);
+  document.write('Math.round(10.380) verifica se deve arredondar para cima ou para baixo = ' + z);
+  document.write('<br /><br />');
+  
+  // Math.random() - Gera número aleatório entre 0 e 1
+  var c = Math.random();
+  document.write('Math.random() sorteia valores entre 0 e 1 = ' + c);
+  document.write('<br /><br />');
+
+  // ===== OUTROS MÉTODOS RELEVANTES DA CLASSE MATH =====
+  
+  // Math.abs() - Valor absoluto
+  document.write('Math.abs(-15.5) retorna o valor absoluto = ' + Math.abs(-15.5));
+  document.write('<br /><br />');
+  
+  // Math.pow() - Potência
+  document.write('Math.pow(2, 3) calcula 2 elevado a 3 = ' + Math.pow(2, 3));
+  document.write('<br /><br />');
+  
+  // Math.sqrt() - Raiz quadrada
+  document.write('Math.sqrt(25) calcula a raiz quadrada de 25 = ' + Math.sqrt(25));
+  document.write('<br /><br />');
+  
+  // Math.max() - Maior valor
+  document.write('Math.max(10, 20, 5, 30) retorna o maior valor = ' + Math.max(10, 20, 5, 30));
+  document.write('<br /><br />');
+  
+  // Math.min() - Menor valor
+  document.write('Math.min(10, 20, 5, 30) retorna o menor valor = ' + Math.min(10, 20, 5, 30));
+  document.write('<br /><br />');
+  
+  // Math.PI - Constante PI
+  document.write('Math.PI retorna o valor de PI = ' + Math.PI);
+  document.write('<br /><br />');
+  
+  // Math.sin(), Math.cos(), Math.tan() - Funções trigonométricas
+  document.write('Math.sin(Math.PI/2) calcula o seno de 90° = ' + Math.sin(Math.PI/2));
+  document.write('<br />');
+  document.write('Math.cos(0) calcula o cosseno de 0° = ' + Math.cos(0));
+  document.write('<br />');
+  document.write('Math.tan(Math.PI/4) calcula a tangente de 45° = ' + Math.tan(Math.PI/4));
+  document.write('<br /><br />');
+  
+  // Math.log() - Logaritmo natural
+  document.write('Math.log(Math.E) calcula o logaritmo natural de e = ' + Math.log(Math.E));
+  document.write('<br /><br />');
+  
+  // Math.exp() - Exponencial
+  document.write('Math.exp(1) calcula e elevado a 1 = ' + Math.exp(1));
+  document.write('<br /><br />');
+  
+  // Math.trunc() - Remove parte decimal (ES6)
+  document.write('Math.trunc(15.789) remove a parte decimal = ' + Math.trunc(15.789));
+  document.write('<br /><br />');
+  
+  // ===== EXEMPLOS PRÁTICOS =====
+  
+  // Gerar número aleatório entre um intervalo
+  var min = 1;
+  var max = 100;
+  var randomEntre1e100 = Math.floor(Math.random() * (max - min + 1)) + min;
+  document.write('Número aleatório entre 1 e 100: ' + randomEntre1e100);
+  document.write('<br /><br />');
+  
+  // Calcular área de círculo
+  var raio = 5;
+  var areaCirculo = Math.PI * Math.pow(raio, 2);
+  document.write('Área do círculo com raio 5: ' + areaCirculo.toFixed(2));
+  document.write('<br /><br />');
+  
+  // Calcular hipotenusa (Teorema de Pitágoras)
+  var catetoA = 3;
+  var catetoB = 4;
+  var hipotenusa = Math.sqrt(Math.pow(catetoA, 2) + Math.pow(catetoB, 2));
+  document.write('Hipotenusa do triângulo 3-4-5: ' + hipotenusa);
+  document.write('<br /><br />');
+  
+  // Arredondamento com casas decimais
+  var numero = 15.789456;
+  document.write('Número original: ' + numero);
+  document.write('<br />');
+  document.write('Arredondado para 2 casas decimais: ' + Math.round(numero * 100) / 100);
+</script>
+    
+  </head>
+
+  <body>
+  </body>
+</html>
