@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+   
+   <script>
+
+    
+     function acao1(){
+       alert('faz a análise do caracter antes da exibição em tela. Ex: analisar se num campo de número de telefone, foi digitado uma letra, que não seria aceito')
+     }
+
+     
+     function acao2(){
+       alert('faz a análise do caracter antes da exibição em tela. Diferença: não é disparado ao clicar ctrl ou shift ou alt')
+     }
+
+     function acao3(){
+       alert('aceita o caracter e faz a análise após a entrada')
+     }
+
+    </script>
+    
+  </head> 
+
+  <body>
+   <input onkeydown="acao1()" type="text"> <!--faz a análise do caracter antes da exibição em tela. Ex: analisar se num campo de número de telefone, foi digitado uma letra, que não seria aceito-->
+   <br>
+   <br>
+   <input onkeypress="acao2()" type="text"> <!--faz a análise do caracter antes da exibição em tela. Diferença: não é 'disparado' ao clicar ctrl ou shift ou alt-->
+   <br>
+   <br>
+   <input onkeyup="acao3()" type="text"> <!--aceita o caracter e faz a análise após a entrada-->
+  </body>
+</html>
