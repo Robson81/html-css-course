@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exercício Mudança de Classe</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+
+
+
+    .borda1 {
+      background: blueviolet;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .borda2 {
+      background: red;
+      margin-right: 5px;
+      margin-bottom: 2px ;
+      color: white;
+    }
+
+    .borda3 {
+      background: yellow;
+      margin-right: 5px;
+    }
+
+    .borda4 {
+      background: blue;
+      color: darkblue;
+    }
+
+    .estilo1 {
+      background: yellow;
+      color: darkblue;
+    }
+
+    .estilo2 {
+      background: red;
+      color: darkblue;
+    }
+
+    .estilo3 {
+      background: green;
+      color: darkblue;
+    }
+
+    #unico {
+      transition: background-color 0.3s ease;
+    }
+
+  </style>
+
+  <script>
+
+    function modificaEstilo(){
+    document.getElementById('unico').className = 'estilo1';
+    }
+
+
+    function capturar(){
+    var string = document.getElementById('unico').value;
+    
+    string = string.trim();
+
+    
+    var fundo = (string.length < 3)? 'vermelho' : 'verde' ;
+   
+    switch(fundo) {
+
+      case 'vermelho':
+
+      document.getElementById('unico').className = 'estilo2';
+      
+      break;  
+    
+      case 'verde':
+
+      
+      document.getElementById('unico').className = 'estilo3';
+
+      break;  
+    
+      default:
+
+    }
+    
+    }
+
+  </script>
+
+
+
+</head>
+
+<body>
+
+<h1>Mudando Background do Input</h1>
+<header>
+  <div class="container borda1">
+    <div class="row">
+      <div class="col-md-12">
+        conteúdo
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="container"> <!-- REMOVIDO: d-flex -->
+    <div class="row"> <!-- row funciona normalmente -->
+      <div class="col-md-12 d-flex">
+      <div class="borda2 flex-grow-1 text-center"><h1>Conteúdo 1</h1></div>
+      <div class="borda3 flex-grow-1 text-center"><h1>Conteúdo 2</h1></div>
+      <div class="borda4 flex-grow-1 text-center"><h1>Conteúdo 3</h1></div>
+      <hr>
+      </div>
+    </div>
+
+    <div>
+      <input id="unico"  type="text" onfocus="modificaEstilo()" onblur="capturar()" placeholder="Digite seu nikname">
+    </div> <!--foco = onfocus / sair do foco onblur-->
+
+  </div>
+</section>
+
+</body>
+</html>
+
+

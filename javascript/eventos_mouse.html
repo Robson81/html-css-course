@@ -11,19 +11,22 @@
     //  }
      function acao1(){
        alert('Elemento foi cliclado uma vez')
-     }function acao3()
-     {
-       alert('Elemento foi cliclado duas vezes')
-     }function acao4()
-     {
-       alert('mouse saiu deixou a div')
-     }function acao5()
-     {
-       alert('background: red;')
      }
-     function acao2()
-     {
-       alert('O cursor do mouse deixou a região do elemento')
+
+     function acao2(){
+       alert('Elemento foi cliclado duas vezes')
+     }
+
+     function acao3(){
+       alert('mouse recebeu um click')
+     }
+
+     function acao4(){
+       alert().style.background="red"
+     }
+
+     function acao5(){
+       alert('MouseOut')
      }
 
     </script>
@@ -36,11 +39,12 @@
     <!-- <div onmouseup="acao()" style="background-color: #ccc; height: 150px; width: 150px;"></div> -->
     <!-- <div onmouseover="acao()" style="background-color: #ccc; height: 150px; width: 150px;"></div> -->
     <!-- <div onmouseout="acao()" style="background-color: #ccc; height: 150px; width: 150px;"></div> -->
-    <div onclick="acao1()" onmouseout="acao2()" style="background-color: #ccc; height: 150px; width: 150px; margin-bottom: 2px;"></div>
+    <div onclick="acao1()" style="background-color: #ccc; height: 150px; width: 150px; margin-bottom: 2px;"></div>
 
-    <div ondblclick="acao3()"style="background-color: #ccc; height: 150px; width: 150px; margin-bottom: 2px;"></div>
-    <div onmouseup="acao4()" style="background-color: #ccc; height: 150px; width: 150px; margin-bottom: 2px;"></div>
-    <div onmouseover="acao5()" style="background-color: #ccc; height: 150px; width: 150px; margin-bottom: 2px;"></div>
+    <div ondblclick="acao2()"style="background-color: #ccc; height: 150px; width: 150px; margin-bottom: 2px;"></div>
+    <div onmouseup="acao3()" style="background-color: #ccc; height: 150px; width: 150px; margin-bottom: 2px;"></div>
+    <div onmouseover="acao4()" style="background-color: #ccc; height: 150px; width: 150px; margin-bottom: 2px;"></div>
+    <div onmouseout="acao5()" style="background-color: #ccc; height: 150px; width: 150px; margin-bottom: 2px;"></div>
 
 
   </body>
