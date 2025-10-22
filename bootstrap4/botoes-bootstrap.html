@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Completo - Classes btn do Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .guide-container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(45deg, #2c3e50, #34495e);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        .section {
+            padding: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+        .section-title {
+            color: #2c3e50;
+            border-left: 5px solid #3498db;
+            padding-left: 15px;
+            margin-bottom: 1.5rem;
+        }
+        .btn-demo {
+            margin: 5px;
+            min-width: 120px;
+        }
+        .code-block {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+            padding: 1rem;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            margin: 10px 0;
+        }
+        .download-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .color-palette {
+            display: flex;
+            gap: 5px;
+            margin: 10px 0;
+        }
+        .color-item {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 2px solid white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <div class="guide-container">
+            <!-- Cabeçalho -->
+            <div class="header">
+                <h1 class="display-4">🎨 Guia Completo</h1>
+                <p class="lead">Classes <code>.btn</code> do Bootstrap 5</p>
+                <p class="mb-0">Documentação para Desenvolvedores</p>
+            </div>
+
+            <!-- Seção 1: Introdução -->
+            <div class="section">
+                <h2 class="section-title">📚 Introdução</h2>
+                <p>As classes <code>.btn</code> do Bootstrap fornecem estilos consistentes e responsivos para botões em aplicações web.</p>
+                
+                <div class="alert alert-info">
+                    <strong>💡 Dica:</strong> Use <code>&lt;button&gt;</code> para ações e <code>&lt;a&gt;</code> para navegação.
+                </div>
+            </div>
+
+            <!-- Seção 2: Cores Temáticas -->
+            <div class="section">
+                <h2 class="section-title">🎨 Cores Temáticas</h2>
+                <p>Classes para diferentes estados e significados:</p>
+                
+                <div class="mb-4">
+                    <h5>Cores Principais:</h5>
+                    <button class="btn btn-primary btn-demo">btn-primary</button>
+                    <button class="btn btn-secondary btn-demo">btn-secondary</button>
+                    <button class="btn btn-success btn-demo">btn-success</button>
+                    <button class="btn btn-danger btn-demo">btn-danger</button>
+                    <button class="btn btn-warning btn-demo">btn-warning</button>
+                    <button class="btn btn-info btn-demo">btn-info</button>
+                    <button class="btn btn-light btn-demo">btn-light</button>
+                    <button class="btn btn-dark btn-demo">btn-dark</button>
+                    <button class="btn btn-link btn-demo">btn-link</button>
+                </div>
+
+                <div class="code-block">
+&lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button class="btn btn-success"&gt;Success&lt;/button&gt;
+&lt;button class="btn btn-danger"&gt;Danger&lt;/button&gt;
+&lt;button class="btn btn-warning"&gt;Warning&lt;/button&gt;
+&lt;button class="btn btn-info"&gt;Info&lt;/button&gt;
+                </div>
+            </div>
+
+            <!-- Seção 3: Outline Buttons -->
+            <div class="section">
+                <h2 class="section-title">📝 Botões Outline</h2>
+                <p>Versão com borda colorida e fundo transparente:</p>
+                
+                <div class="mb-4">
+                    <button class="btn btn-outline-primary btn-demo">outline-primary</button>
+                    <button class="btn btn-outline-success btn-demo">outline-success</button>
+                    <button class="btn btn-outline-danger btn-demo">outline-danger</button>
+                    <button class="btn btn-outline-warning btn-demo">outline-warning</button>
+                    <button class="btn btn-outline-info btn-demo">outline-info</button>
+                    <button class="btn btn-outline-dark btn-demo">outline-dark</button>
+                </div>
+
+                <div class="code-block">
+&lt;button class="btn btn-outline-primary"&gt;Outline Primary&lt;/button&gt;
+&lt;button class="btn btn-outline-success"&gt;Outline Success&lt;/button&gt;
+&lt;button class="btn btn-outline-danger"&gt;Outline Danger&lt;/button&gt;
+                </div>
+            </div>
+
+            <!-- Seção 4: Tamanhos -->
+            <div class="section">
+                <h2 class="section-title">📏 Tamanhos Predefinidos</h2>
+                <p>Controle o tamanho dos botões com classes específicas:</p>
+                
+                <div class="mb-4">
+                    <button class="btn btn-primary btn-lg btn-demo">btn-lg (Large)</button>
+                    <button class="btn btn-primary btn-demo">Normal</button>
+                    <button class="btn btn-primary btn-sm btn-demo">btn-sm (Small)</button>
+                </div>
+
+                <div class="code-block">
+&lt;button class="btn btn-primary btn-lg"&gt;Large&lt;/button&gt;
+&lt;button class="btn btn-primary"&gt;Normal&lt;/button&gt;
+&lt;button class="btn btn-primary btn-sm"&gt;Small&lt;/button&gt;
+                </div>
+            </div>
+
+            <!-- Seção 5: Estados -->
+            <div class="section">
+                <h2 class="section-title">🔘 Estados e Comportamentos</h2>
+                
+                <div class="mb-4">
+                    <h5>Estados Interativos:</h5>
+                    <button class="btn btn-primary active btn-demo">Active</button>
+                    <button class="btn btn-primary disabled btn-demo">Disabled</button>
+                    <button class="btn btn-primary btn-demo" data-bs-toggle="button">Toggle</button>
+                </div>
+
+                <div class="mb-4">
+                    <h5>Botão de Loading:</h5>
+                    <button class="btn btn-primary btn-demo" disabled>
+                        <span class="spinner-border spinner-border-sm"></span>
+                        Loading...
+                    </button>
+                </div>
+
+                <div class="code-block">
+&lt;button class="btn btn-primary active"&gt;Ativo&lt;/button&gt;
+&lt;button class="btn btn-primary disabled"&gt;Desabilitado&lt;/button&gt;
+
+&lt;button class="btn btn-primary" type="button" disabled&gt;
+  &lt;span class="spinner-border spinner-border-sm"&gt;&lt;/span&gt;
+  Carregando...
+&lt;/button&gt;
+                </div>
+            </div>
+
+            <!-- Seção 6: Grupos e Especiais -->
+            <div class="section">
+                <h2 class="section-title">🎪 Estilos Especiais</h2>
+                
+                <div class="mb-4">
+                    <h5>Grupo de Botões:</h5>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-primary">Esquerda</button>
+                        <button type="button" class="btn btn-primary">Centro</button>
+                        <button type="button" class="btn btn-primary">Direita</button>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h5>Botão com Ícone:</h5>
+                    <button class="btn btn-success btn-demo">
+                        <i class="fas fa-check"></i> Confirmar
+                    </button>
+                    <button class="btn btn-danger btn-demo">
+                        <i class="fas fa-trash"></i> Excluir
+                    </button>
+                </div>
+
+                <div class="mb-4">
+                    <h5>Botão com Badge:</h5>
+                    <button class="btn btn-primary btn-demo">
+                        Notificações <span class="badge bg-secondary">4</span>
+                    </button>
+                </div>
+
+                <div class="code-block">
+&lt;!-- Grupo --&gt;
+&lt;div class="btn-group" role="group"&gt;
+  &lt;button class="btn btn-primary"&gt;Esquerda&lt;/button&gt;
+  &lt;button class="btn btn-primary"&gt;Centro&lt;/button&gt;
+  &lt;button class="btn btn-primary"&gt;Direita&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- Com Ícone --&gt;
+&lt;button class="btn btn-success"&gt;
+  &lt;i class="fas fa-check"&gt;&lt;/i&gt; Confirmar
+&lt;/button&gt;
+
+&lt;!-- Com Badge --&gt;
+&lt;button class="btn btn-primary"&gt;
+  Notificações &lt;span class="badge bg-secondary"&gt;4&lt;/span&gt;
+&lt;/button&gt;
+                </div>
+            </div>
+
+            <!-- Seção 7: Responsividade -->
+            <div class="section">
+                <h2 class="section-title">📱 Responsividade</h2>
+                
+                <div class="mb-4">
+                    <h5>Botão Block (Largura Total):</h5>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="button">Botão Block</button>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h5>Grupo Vertical:</h5>
+                    <div class="btn-group-vertical">
+                        <button type="button" class="btn btn-primary">Botão 1</button>
+                        <button type="button" class="btn btn-primary">Botão 2</button>
+                    </div>
+                </div>
+
+                <div class="code-block">
+&lt;!-- Block Button --&gt;
+&lt;div class="d-grid gap-2"&gt;
+  &lt;button class="btn btn-primary"&gt;Botão Block&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- Grupo Vertical --&gt;
+&lt;div class="btn-group-vertical"&gt;
+  &lt;button class="btn btn-primary"&gt;Botão 1&lt;/button&gt;
+  &lt;button class="btn btn-primary"&gt;Botão 2&lt;/button&gt;
+&lt;/div&gt;
+                </div>
+            </div>
+
+            <!-- Seção 8: Boas Práticas -->
+            <div class="section">
+                <h2 class="section-title">💡 Boas Práticas</h2>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">✅ O que fazer</h5>
+                                <ul>
+                                    <li>Use cores semanticamente</li>
+                                    <li>Mantenha consistência visual</li>
+                                    <li>Use <code>type="button"</code> em botões não-submit</li>
+                                    <li>Teste a acessibilidade</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">❌ O que evitar</h5>
+                                <ul>
+                                    <li>Muitas cores diferentes</li>
+                                    <li>Botões muito pequenos em mobile</li>
+                                    <li>Esquecer estados disabled</li>
+                                    <li>Usar <code>&lt;a&gt;</code> para ações</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botão de Download -->
+    <button class="btn btn-success btn-lg download-btn" onclick="generatePDF()">
+        <i class="fas fa-download"></i> Baixar PDF
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function generatePDF() {
+            alert('Para gerar o PDF:\n\n1. Salve esta página como HTML\n2. Use o print do navegador → Salvar como PDF\n3. Ou use ferramentas online como:\n   - html2pdf.com\n   - sejda.com/html-to-pdf\n\nEste guia está pronto para conversão!');
+            
+            // Ativar tooltips
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            });
+        }
+
+        // Ativar funcionalidade do botão toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            var toggleButton = document.querySelector('[data-bs-toggle="button"]');
+            if (toggleButton) {
+                toggleButton.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
