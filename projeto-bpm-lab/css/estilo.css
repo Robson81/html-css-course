@@ -1,0 +1,27 @@
+.btn-brown {
+        color: #fff; /* White text for contrast */
+        background-color: #8B4513; /* Brown background color */
+        border-color: #8B4513; /* Brown border color */
+    }
+
+    .btn-brown:hover {
+        background-color: #A0522D; /* Lighter brown on hover */
+        border-color: #A0522D;
+    }
+
+    .branco{
+        color: white;
+    }
+
+    .text-purple {
+    color: #6207e3;
+    margin-left: 10px;
+}
+
+    body {
+
+      font-size: 1em;
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+     background: ghostwhite ; /*#e6e6e6*/
+    
+    }
