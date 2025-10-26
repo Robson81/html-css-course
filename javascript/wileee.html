@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Estrutura de Repetição Wile</title>
+
+	<script>
+			var	x=0
+		while(x <= 10){
+			if (x%2==0) {
+
+			document.write( x + '<br/>')
+				}
+
+			x += 3;
+		}
+			var y =1;
+			document.write('<hr/>');		
+		do {
+	
+			if (y%2==1) {
+
+			if (y>=6) {
+
+				break;
+					
+			} else {
+				document.write( y + '<br/>');
+				y += 2;	
+			}
+
+			}
+
+		} while (y<=10);
+
+		document.write('<hr/>');		
+
+			var z = 0;
+		do {
+			
+				z += 1;
+			if (z%2==1) {
+			if (z==5) {
+
+				continue;
+					
+			} 
+								
+			}
+
+			document.write( z + '<br/>');
+
+
+			} while (z<=10);
+
+			document.write('<hr/>');		
+
+			for (var i = 10; i >= 0; i--) {
+					document.write(i + '<br/>');
+					//break;
+					//continue;
+					//i-= 4
+					//i+= 4
+			}
+
+
+	</script>
+
+
+
+
+</head>
+<body>
+
+</body>
+</html>
